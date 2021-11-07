@@ -29,28 +29,23 @@ public class Quiz {
     public Quiz() {
     }
 
-    public Quiz(String question, String rone, String rtwo, String rthree, int correctAnswer,String category) {
+    public Quiz(String question, String rone, String rtwo, String rthree, int correctAnswer, String category) {
         this.question = question;
         this.rone = rone;
         this.rtwo = rtwo;
         this.rthree = rthree;
         this.correctAnswer = correctAnswer;
-        this.category= category;
+        this.category = category;
     }
 
-    public Quiz(String question, String rone, String rtwo) {
-        this.question = question;
-        this.rone = rone;
-        this.rtwo = rtwo;
-    }
-    public Quiz(String question, String rone, String rtwo, String rthree,String rfour, int correctAnswer,String category) {
+    public Quiz(String question, String rone, String rtwo, String rthree, String rfour, int correctAnswer, String category) {
         this.question = question;
         this.rone = rone;
         this.rtwo = rtwo;
         this.rthree = rthree;
-        this.rfour=rfour;
+        this.rfour = rfour;
         this.correctAnswer = correctAnswer;
-        this.category= category;
+        this.category = category;
     }
 
 

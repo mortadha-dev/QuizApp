@@ -1,7 +1,9 @@
 package tun.dev.comeon.repositories;
 
 import android.app.Application;
+
 import androidx.lifecycle.LiveData;
+
 import java.util.List;
 
 import tun.dev.comeon.DAO.QuizDao;
@@ -15,15 +17,15 @@ public class QuizRepository {
 
     private LiveData<List<Quiz>> listQuiz;
 
-    public QuizRepository(Application application){
+    public QuizRepository(Application application) {
         MyDatabase database = MyDatabase.getInstance(application);
-        quizDao =database.quizDAO(); //call the abstract method in the database
+        quizDao = database.quizDAO(); //call the abstract method in the database
         listQuiz = quizDao.getAllQuiz();
     }
 
     //operations :
-    public LiveData<List<Quiz>> getAllQuizs(String category){
-        listQuiz= quizDao.getQuizByCategory(category);
+    public LiveData<List<Quiz>> getAllQuizs(String category) {
+        listQuiz = quizDao.getQuizByCategory(category);
         return listQuiz;
     }
 

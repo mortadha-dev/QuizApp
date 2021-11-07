@@ -32,9 +32,6 @@
             android:name=".activities.MainActivity"
             android:theme="@style/Theme.ComeOn" />
         <activity android:name=".activities.MainActivity2" />
-        <activity
-            android:name=".activities.MainActivity3"
-            android:parentActivityName=".activities.MainActivity2" />
     </application>
 
 </manifest>

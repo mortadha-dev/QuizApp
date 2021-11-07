@@ -10,8 +10,8 @@ import tun.dev.comeon.R;
 import tun.dev.comeon.database.MyDatabase;
 
 public class SplachActivity extends AppCompatActivity {
-    private static  int SPLACH_TIME_OUT= 3000;
-    MyDatabase db;
+    private static int SPLACH_TIME_OUT = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,6 @@ public class SplachActivity extends AppCompatActivity {
                 finish();
             }
         }, SPLACH_TIME_OUT);
-
 
 
     }

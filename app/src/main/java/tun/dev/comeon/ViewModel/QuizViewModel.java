@@ -20,7 +20,6 @@ public class QuizViewModel extends AndroidViewModel {
     public QuizViewModel(@NonNull Application application) {
         super(application);
         quizRepository = new QuizRepository(application);
-       // allquizs = quizRepository.getAllQuizs();
     }
 
     public LiveData<List<Quiz>> getAllQuizByCategory(String category) {

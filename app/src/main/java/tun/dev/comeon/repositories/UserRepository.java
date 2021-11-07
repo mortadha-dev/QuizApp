@@ -3,8 +3,6 @@ package tun.dev.comeon.repositories;
 import android.app.Application;
 import android.os.AsyncTask;
 
-import androidx.lifecycle.LiveData;
-
 import java.util.List;
 
 import tun.dev.comeon.DAO.UserDao;
@@ -29,15 +27,16 @@ public class UserRepository {
         return listUsers;
     }
 
-    public void insert(User user){
+    public void insert(User user) {
         new InsertUserAsyncTask(userDao).execute(user);
     }
 
 
-    public static  class InsertUserAsyncTask extends AsyncTask<User, Void, Void>{
+    public static class InsertUserAsyncTask extends AsyncTask<User, Void, Void> {
         private UserDao userDao;
-        private InsertUserAsyncTask(UserDao userDao){
-            this.userDao=userDao;
+
+        private InsertUserAsyncTask(UserDao userDao) {
+            this.userDao = userDao;
         }
 
         @Override

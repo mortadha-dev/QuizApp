@@ -22,7 +22,7 @@ class WrongDialog {
         this.mContext = mContext;
     }
 
-    void WrongDialog(String correctAnswer,MainActivity4 quizActivity){
+    void WrongDialog(String correctAnswer, MainActivity4 quizActivity) {
 
         mquizActivity = quizActivity;
         wrongAnswerDialog = new Dialog(mContext);
@@ -44,9 +44,8 @@ class WrongDialog {
         wrongAnswerDialog.show();
         wrongAnswerDialog.setCancelable(false);
         wrongAnswerDialog.setCanceledOnTouchOutside(false);
-
         wrongAnswerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
     }
-    
+
 }

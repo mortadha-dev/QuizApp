@@ -12,12 +12,12 @@ import tun.dev.comeon.entities.User;
 public interface UserDao {
 
     @Insert
-    void InsertUser(User user) ; 
+    void InsertUser(User user);
 
     @Query("SELECT * FROM user")
     List<User> getAllUsers();
 
     @Query("SELECT * FROM user u where u.login= :login and u.password = :password ")
-    User getOneUser(String login ,String password);
+    User getOneUser(String login, String password);
 
 }
