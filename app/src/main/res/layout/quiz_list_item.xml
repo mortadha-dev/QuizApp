@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6fcd5"
+    >
+
+        <TextView
+            android:id="@+id/mortadhaquestion"
+            android:layout_width="650dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="80dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#FF4500"
+            android:textColor="@color/black"
+            android:id="@+id/mortadha1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:text="réponse 1"
+            android:layout_marginTop="150dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <Button
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF4500"
+        android:textColor="@color/black"
+        android:id="@+id/mortadha2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="réponse 1"
+        android:layout_marginTop="250dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+
+    </RelativeLayout>
