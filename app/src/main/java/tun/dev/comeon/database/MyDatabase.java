@@ -27,7 +27,7 @@ public abstract class MyDatabase extends RoomDatabase {
     public static synchronized MyDatabase getInstance(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                    MyDatabase.class, "my_db ")
+                     MyDatabase.class, "my_db ")
                     .fallbackToDestructiveMigration()
                     .allowMainThreadQueries()
                     .addCallback(roomCallBack)
@@ -35,7 +35,7 @@ public abstract class MyDatabase extends RoomDatabase {
         }
         // context.deleteDatabase("my_db ") ;
 
-        return instance;
+         return instance;
     }
 
     private static RoomDatabase.Callback roomCallBack = new RoomDatabase.Callback() {
