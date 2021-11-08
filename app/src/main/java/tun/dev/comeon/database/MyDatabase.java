@@ -78,11 +78,11 @@ public abstract class MyDatabase extends RoomDatabase {
             quizDao.addQuiz(new Quiz("Comment s'appelle la principale île de la Tunisie", "Pantelleria", "Djerba", "Lampedusa", "Bahamas", 2, "geographie"));
             quizDao.addQuiz(new Quiz("Combien de gouvernorats y a-t-il dans la Tunisie", "22", "23", "20", "24", 4, "geographie"));
             quizDao.addQuiz(new Quiz("Quelle est la hauteur de la montagne El chaanbi", "1 640 m", "1 801 m", "1 544 m", "1 944 m", 3, "geographie"));
-            quizDao.addQuiz(new Quiz("Quelle est la superficie approximative de la Tunisie", "63 000 km2", "163 000 km2", "563 000 km2", "730 000 km2", 2, "geographie"));
-            quizDao.addQuiz(new Quiz("Quelle est la superficie approximative de la Tunisie", "63 000 km2", "163 000 km2", "563 000 km2", "730 000 km2", 2, "geographie"));
-            quizDao.addQuiz(new Quiz("Quelle est la superficie approximative de la Tunisie", "63 000 km2", "163 000 km2", "563 000 km2", "730 000 km2", 2, "geographie"));
-            quizDao.addQuiz(new Quiz("Quelle est la superficie approximative de la Tunisie", "63 000 km2", "163 000 km2", "563 000 km2", "730 000 km2", 2, "geographie"));
-            quizDao.addQuiz(new Quiz("Quelle est la superficie approximative de la Tunisie", "63 000 km2", "163 000 km2", "563 000 km2", "730 000 km2", 2, "geographie"));
+            quizDao.addQuiz(new Quiz("Quelle est la capitale de fait de la Suisse ?", " Bâle", " Berne", " Zurich", " Lausanne",  2, "geographie"));
+            quizDao.addQuiz(new Quiz("Dans quel pays peut-on trouver la ville de Tcheliabinsk ?", "En Ukraine ", "En Russie ", "En Pologne", "En Biélorussie ", 2, "geographie"));
+            quizDao.addQuiz(new Quiz("Où se situe le parc naturel du Perche ? ", "En Wallonie ", "En Normandie", " En Bretagne ", "En Irlande", 2, "geographie"));
+            quizDao.addQuiz(new Quiz("Quel est le plus grand lac d’Amérique du Nord ? ", "Le lac Ontario", " Le lac Huron", "Le lac Majeur ", "Le lac Supérieur ",4, "geographie"));
+            quizDao.addQuiz(new Quiz("Quelle ville compte la plus haute densité de population au monde ?", " Delhi ", "Le Pré-Saint-Gervais", " Le Caire", " Manille", 4, "geographie"));
 
             //histoire
             quizDao.addQuiz(new Quiz("En quelle année a commencé la guerre civile d'Espagne ", "1856", "1896", "1906", "1936", 4, "histoire"));
