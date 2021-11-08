@@ -102,6 +102,25 @@ public abstract class MyDatabase extends RoomDatabase {
             quizDao.addQuiz(new Quiz("qinze histoire ", "1-premiére reponse", "2-deuxiéme", "3-reponse", 1, "histoire"));
 
 
+
+            quizDao.addQuiz(new Quiz("Quel célèbre dictateur dirigea l’URSS du milieu des années 1920 à 1953 ? ", " Staline ", "Molotov ", "Trotski", " Lénine ", 1, "culture"));
+            quizDao.addQuiz(new Quiz("Dans quel pays peut-on trouver la Catalogne, l’Andalousie et la Castille ?", " La France", " La Portugal", " L'Italie ", "L'Espagne", 4, "culture"));
+            quizDao.addQuiz(new Quiz("Qui a dit : « Le sort en est jeté » (Alea jacta est) ? ", "Vercingétorix ", "Attila", " Auguste", " César", 4, "culture"));
+            quizDao.addQuiz(new Quiz("qui doit-on la chanson « I Shot the Sheriff » ?", " Bob Marley ", "Jim Morrison", " Eric Clapton", " UB40", 1, "culture"));
+            quizDao.addQuiz(new Quiz("Quel pays a remporté la coupe du monde de football en 2014 ?", " L'Allemagne", " L'Italie", " Le Brésil", " L'Argentine",  1, "culture"));
+            quizDao.addQuiz(new Quiz("Dans quelle ville italienne l’action de la pièce de Shakespeare « Roméo et Juliette » se situe-t-elle ? ", "Venise ", "Rome", " Milan", " Vérone ", 4, "culture"));
+            quizDao.addQuiz(new Quiz("Par quel mot désigne-t-on une belle-mère cruelle ? ", "Une godiche ", "Une jocrisse", " Une marâtre", " Une chenapan",  3, "culture"));
+            quizDao.addQuiz(new Quiz("Qui était le dieu de la guerre dans la mythologie grecque ?", " Arès ", "Hadès ", "Apollon ", "Hermès",  1, "culture"));
+            quizDao.addQuiz(new Quiz("De quel courant philosophique Plotin est-il le grand représentant ?", " Le néoplatonisme ", "Le scepticisme", " Le stoïcisme ", "L'aristotélisme",  1, "culture"));
+            quizDao.addQuiz(new Quiz("Qui a réalisé le film « In the mood for love » ? ", "Scorsese ", "Wong Kar-Wai", " Zhang Yimou Chan", " Feng Zhao", 2, "culture"));
+            quizDao.addQuiz(new Quiz("De l’œuvre de quel écrivain est tirée la célèbre question « Que sais-je ? » ", "Montaigne", " Voltaire", " Étienne de la Boétie ", "Diderot",  1, "culture"));
+            quizDao.addQuiz(new Quiz("Quelle race d’animal est un briard ? ", "Un chat", " Un chien", " Un canard", " Un cheval", 2, "culture"));
+            quizDao.addQuiz(new Quiz("Où est né Mozart ? ", "Salzbourg ", "Turin ", "Vienne ", "Venise",  1, "culture"));
+            quizDao.addQuiz(new Quiz("Quelle théorie doit-on à Isaac Newton ? ", "La théorie des cordes", " La théorie de la gravitation universelle", " La théorie atomique", " La théorie de l'évolution des espèces",  2, "culture"));
+            quizDao.addQuiz(new Quiz("Parmi les hommes politiques suivants, lequel a succédé à Hugo Chavez en tant que Président du Venezuela ?", " Nicolas Maduro ", "Evo Morales ", "Rafael Correa", "Lula",  1, "culture"));
+            quizDao.addQuiz(new Quiz("Que signifie « procrastiner » ? ", "Parler dans un langage particulièrement vulgaire ", "Contredire systématiquement son interlocuteur", " Remettre à plus tard quelque chose ", "Étudier beaucoup en vue d'un examen", 3, "culture"));
+
+
             return null;
         }
     }
