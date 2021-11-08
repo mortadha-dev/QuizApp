@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:gravity="center"
-        android:background="#b6fcd5"
-        tools:context=".activities.ResultActivity">
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:background="#b6fcd5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.ResultActivity"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
 
 
     <TextView
@@ -28,8 +27,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/result_bg"
         android:layout_marginStart="10dp"
+        android:background="@drawable/result_bg"
         android:orientation="vertical"
         android:paddingStart="30dp"
         android:paddingEnd="30dp">
@@ -39,55 +38,53 @@
             android:id="@+id/result_tv_HighScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="High Score: "
-            android:textColor="#000"
-            android:textSize="30sp"
             android:layout_marginTop="30dp"
             android:padding="10dp"
+            android:text="High Score: "
             android:textAlignment="textStart"
-            android:textStyle="bold"/>
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
 
         <TextView
             android:id="@+id/result_tv_Num_of_Ques"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Total Quesions :"
+            android:textAlignment="textStart"
             android:textColor="#000"
             android:textSize="25sp"
-            android:padding="10dp"
-            android:textAlignment="textStart"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/result_tv_correct_Ques"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Correct: "
+            android:textAlignment="textStart"
             android:textColor="#000"
             android:textSize="25sp"
-            android:padding="10dp"
-            android:textAlignment="textStart"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/result_tv_wrong_Ques"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Wrong: "
+            android:textAlignment="textStart"
             android:textColor="#000"
             android:textSize="25sp"
-            android:padding="10dp"
-            android:textAlignment="textStart"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_height="wrap_content">
+            android:weightSum="2">
 
             <Button
                 android:id="@+id/bt_result_main_menu"

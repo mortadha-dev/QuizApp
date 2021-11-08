@@ -12,12 +12,11 @@ import android.widget.TextView;
 import tun.dev.comeon.R;
 
 
-
 public class ResultActivity extends AppCompatActivity {
 
-    TextView txtHighScore,txtTotalQuizQuestion,txtCorrectQuestion,txtWrongQuestion;
+    TextView txtHighScore, txtTotalQuizQuestion, txtCorrectQuestion, txtWrongQuestion;
     Button btMainMenu;
-    int highScore =0;
+    int highScore = 0;
     private static final String SHRED_PREFERENCE = "shared_preference";
     private static final String SHRED_PREFERENCE_HIGH_SCORE = "shared_preference_high_score";
 
@@ -36,7 +35,7 @@ public class ResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ResultActivity.this,MainActivity2.class);
+                Intent intent = new Intent(ResultActivity.this, MainActivity2.class);
                 startActivity(intent);
 
             }
@@ -46,17 +45,17 @@ public class ResultActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        int score = intent.getIntExtra("UserScore",0);
-        int totalQuestion = intent.getIntExtra("TotalQuizQuestions",0);
-        int correctQuestions = intent.getIntExtra("CorrectQuestions",0);
-        int wrongQuestion = intent.getIntExtra("WrongQuestions",0);
+        int score = intent.getIntExtra("UserScore", 0);
+        int totalQuestion = intent.getIntExtra("TotalQuizQuestions", 0);
+        int correctQuestions = intent.getIntExtra("CorrectQuestions", 0);
+        int wrongQuestion = intent.getIntExtra("WrongQuestions", 0);
 
         txtTotalQuizQuestion.setText("Total Questions: " + String.valueOf(totalQuestion));
         txtCorrectQuestion.setText("Correct Questions: " + String.valueOf(correctQuestions));
         txtWrongQuestion.setText("Wrong Questions: " + String.valueOf(wrongQuestion));
 
 
-        if (score > highScore){
+        if (score > highScore) {
 
             updateScore(score);
         }
@@ -69,26 +68,19 @@ public class ResultActivity extends AppCompatActivity {
 
         txtHighScore.setText("High Score: " + String.valueOf(highScore));
 
-        SharedPreferences sharedPreferences = getSharedPreferences(SHRED_PREFERENCE,MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(SHRED_PREFERENCE, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt(SHRED_PREFERENCE_HIGH_SCORE,highScore);
+        editor.putInt(SHRED_PREFERENCE_HIGH_SCORE, highScore);
         editor.apply();
     }
 
     private void loadHighScore() {
 
-        SharedPreferences sharedPreferences = getSharedPreferences(SHRED_PREFERENCE,MODE_PRIVATE);
-        highScore = sharedPreferences.getInt(SHRED_PREFERENCE_HIGH_SCORE,0);
+        SharedPreferences sharedPreferences = getSharedPreferences(SHRED_PREFERENCE, MODE_PRIVATE);
+        highScore = sharedPreferences.getInt(SHRED_PREFERENCE_HIGH_SCORE, 0);
         txtHighScore.setText("High Score: " + String.valueOf(highScore));
 
     }
-
-
-
-
-
-
-
 
 
 }

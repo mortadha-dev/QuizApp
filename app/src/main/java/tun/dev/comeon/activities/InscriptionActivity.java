@@ -26,36 +26,34 @@ public class InscriptionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscription);
-
-
-    }
-
-
-    public void onBtnClick(View view) {
-
-
+        nom = findViewById(R.id.Nom);
+        Prenom = findViewById(R.id.Prenom);
+        Login = findViewById(R.id.Login);
+        Password = findViewById(R.id.Password);
+        Button buttonLogin = findViewById(R.id.buttonLogin);
         Button buttoninscri = findViewById(R.id.button);
         MyDatabase db = MyDatabase.getInstance(this.getApplicationContext());
-
         buttoninscri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nom = findViewById(R.id.Nom);
-                Prenom = findViewById(R.id.Prenom);
-                Login = findViewById(R.id.Login);
-                Password = findViewById(R.id.Password);
-                System.out.println(nom.getText().toString());
                 User user = new User(nom.getText().toString(), Prenom.getText().toString(), Login.getText().toString(), Password.getText().toString());
                 db.userDao().InsertUser(user);
-                System.out.println(db.userDao().getAllUsers().toString());
-                OpenLoginActivity();
+                Intent i = new Intent(InscriptionActivity.this, MainActivity.class);
+                startActivity(i);
 
             }
         });
+
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(InscriptionActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 
-    public void OpenLoginActivity() {
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-    }
+
 }

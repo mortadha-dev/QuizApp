@@ -15,7 +15,7 @@ class WrongDialog {
     private Context mContext;
     private Dialog wrongAnswerDialog;
 
-    private MainActivity4 mquizActivity;
+    private MainActivity4 mainActivity4;
 
 
     WrongDialog(Context mContext) {
@@ -24,7 +24,7 @@ class WrongDialog {
 
     void WrongDialog(String correctAnswer, MainActivity4 quizActivity) {
 
-        mquizActivity = quizActivity;
+        mainActivity4 = quizActivity;
         wrongAnswerDialog = new Dialog(mContext);
         wrongAnswerDialog.setContentView(R.layout.wrong_dialog);
         final Button btwrongAnswerDialog = (Button) wrongAnswerDialog.findViewById(R.id.bt_wrongDialog);
@@ -37,7 +37,7 @@ class WrongDialog {
             public void onClick(View v) {
 
                 wrongAnswerDialog.dismiss();
-                mquizActivity.setQuestionView();
+                mainActivity4.setQuestionView();
             }
         });
 

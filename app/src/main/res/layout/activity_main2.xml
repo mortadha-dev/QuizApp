@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity2"
     android:background="#b6fcd5"
-    >
+    tools:context=".activities.MainActivity2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,8 +53,7 @@
             app:cardBackgroundColor="@color/purple_200"
             app:cardCornerRadius="10sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonToList"
-            tools:layout_editor_absoluteX="10dp"
-            >
+            tools:layout_editor_absoluteX="10dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -113,13 +111,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF4500"
+        android:onClick="deconnecter"
         android:text="Se déconnecter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#FF4500"
-        android:onClick="onBtnClick"
 
         />
 
@@ -131,8 +129,7 @@
         android:layout_marginEnd="88dp"
         android:text="Welcome To Our App"
         android:textColor="@color/purple_500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:textSize="20dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

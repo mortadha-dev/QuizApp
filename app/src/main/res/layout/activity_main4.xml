@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#b6fcd5"
+    android:orientation="vertical"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     tools:context=".activities.MainActivity4">
@@ -15,13 +14,12 @@
         android:id="@+id/txtTotalQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Question: 1/10"
-        android:textSize="22sp"
-        android:textColor="#CEC2C2"
-        android:textStyle="bold"
         android:layout_marginTop="10dp"
+        android:text="Question: 1/10"
         android:textAlignment="center"
-        />
+        android:textColor="#CEC2C2"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,10 +34,9 @@
             android:layout_weight="1"
             android:paddingStart="10dp"
             android:text="Score: 0"
-            android:textStyle="bold"
             android:textColor="#CEC2C2"
             android:textSize="18sp"
-            />
+            android:textStyle="bold" />
 
 
         <TextView
@@ -65,13 +62,13 @@
             android:id="@+id/txtQuetsionContainer"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:textSize="25sp"
-            android:textColor="#CEC2C2"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:paddingTop="20dp"
             android:padding="25dp"
-            android:text="Dino Code is best place to learn app development ?" />
+            android:paddingTop="20dp"
+            android:text="what is blablablabla?"
+            android:textAlignment="center"
+            android:textColor="#CEC2C2"
+            android:textSize="25sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,52 +80,49 @@
         <RadioGroup
             android:id="@+id/raido_group"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <RadioButton
                 android:id="@+id/radio_button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:button="@null"
-                android:layout_marginTop="5dp"
                 android:freezesText="true"
-                android:text="OS"
                 android:padding="15dp"
-                android:textSize="22sp"
-                android:textColor="#000"
                 android:paddingStart="90dp"
-                />
+                android:text="mortadha"
+                android:textColor="#000"
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/radio_button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:button="@null"
-                android:layout_marginTop="5dp"
                 android:freezesText="true"
-                android:text="Operating System"
                 android:padding="15dp"
-                android:textSize="22sp"
-                android:textColor="#000"
                 android:paddingStart="90dp"
-                />
+                android:text="tayssir"
+                android:textColor="#000"
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/radio_button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
                 android:layout_marginTop="5dp"
+                android:layout_weight="1"
                 android:button="@null"
                 android:freezesText="true"
-                android:text="Browser"
-                android:textSize="22sp"
-                android:textColor="#000"
+                android:padding="15dp"
                 android:paddingStart="90dp"
-                />
+                android:text="Ali"
+                android:textColor="#000"
+                android:textSize="22sp" />
 
             <RadioButton
                 android:id="@+id/radio_button4"
@@ -139,8 +133,8 @@
                 android:button="@null"
                 android:freezesText="true"
                 android:padding="15dp"
-                android:text="Random Access Memory"
                 android:paddingStart="90dp"
+                android:text="Ahmed"
                 android:textColor="#000"
                 android:textSize="22sp" />
         </RadioGroup>
@@ -150,8 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_Next"

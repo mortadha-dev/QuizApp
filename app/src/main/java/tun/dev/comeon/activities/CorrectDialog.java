@@ -15,7 +15,7 @@ public class CorrectDialog {
     private Context mContext;
     private Dialog correctDialog;
 
-    private MainActivity4 mquizActivity;
+    private MainActivity4 mainActivity4;
 
     public CorrectDialog(Context mContext) {
         this.mContext = mContext;
@@ -23,8 +23,7 @@ public class CorrectDialog {
 
     public void correctDialog(int score, MainActivity4 quizActivity) {
 
-        mquizActivity = quizActivity;
-
+        mainActivity4 = quizActivity;
 
         correctDialog = new Dialog(mContext);
 
@@ -36,9 +35,8 @@ public class CorrectDialog {
         btcorrectDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 correctDialog.dismiss();
-                mquizActivity.setQuestionView();
+                mainActivity4.setQuestionView();
 
             }
         });
@@ -47,6 +45,7 @@ public class CorrectDialog {
         correctDialog.setCancelable(false);
         correctDialog.setCanceledOnTouchOutside(false);
         correctDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
     }
 
     private void Score(int score) {

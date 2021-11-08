@@ -30,18 +30,15 @@ public class LevelsClass extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // item clicked
+
                 beginner = 1;
                 Intent i = new Intent(LevelsClass.this, MainActivity4.class);
                 categoryValue = getIntent().getStringExtra("Category");
-                //System.out.println("++++++++++++++++++this is the categoryvalue+++++++++++++++"+categoryValue);
                 i.putExtra("Category", categoryValue);
-                System.out.println("++++++++++++++++++this is the level in levels class+++++++++++++++" + beginner);
                 i.putExtra("level", beginner);
                 startActivity(i);
             }
         });
-
 
     }
 
@@ -49,7 +46,6 @@ public class LevelsClass extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // item clicked
                 beginner = 2;
                 Intent i = new Intent(LevelsClass.this, MainActivity4.class);
                 categoryValue = getIntent().getStringExtra("Category");
@@ -66,7 +62,6 @@ public class LevelsClass extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // item clicked
                 beginner = 3;
                 Intent i = new Intent(LevelsClass.this, MainActivity4.class);
                 categoryValue = getIntent().getStringExtra("Category");

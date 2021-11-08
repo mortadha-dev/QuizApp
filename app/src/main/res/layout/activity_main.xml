@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
+    android:background="#b6fcd5"
 
-    android:background="#b6fcd5">
+    tools:context=".activities.MainActivity">
+
 
     <EditText
         android:id="@+id/textEmail"
@@ -41,7 +42,6 @@
         android:layout_marginTop="1400px"
         android:layout_marginBottom="900dp"
         android:backgroundTint="#FF4500"
-        android:onClick="onBtnClick"
         android:text="Connexion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1550px"
         android:text="S'inscrire"
-        android:onClick="onBtnClick"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,8 +66,8 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="440dp"
         android:layout_marginTop="50px"
+        android:layout_marginBottom="440dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
